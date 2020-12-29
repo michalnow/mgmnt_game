@@ -1,0 +1,23 @@
+.unauthenticated-info,
+.game-button {
+    background-color: #484141;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: large;
+    box-shadow: 1px 3px 5px grey;
+  }
+
+.info-link {
+    color: lightslategray;
+    cursor: pointer;
+}
+
+.info-link:hover {
+    color: chocolate;
+}
+
+.game-button:hover {
+    background-color:  #313030;
+}

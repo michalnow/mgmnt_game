@@ -67,6 +67,16 @@
     przynieść najwyższe zyski oznaczone są kolorem zielonym. Pozostałe możliwe portfele oznaczone są kolorem żółtym.
   </p>
  
+  {% if user.is_authenticated %}
+  <div style="max-width: 100%; text-align: center;">
+    <button class="game-button" onclick="location.href='{% url 'game-main' %}';">Przejdź do gry</button>
+  </div>
+  {% endif %}
+  {% if not user.is_authenticated %}
+  <div style="max-width: 100%; text-align: center;">
+    <span class="unauthenticated-info">Aby przejść do rozgrywki musisz się <b class="info-link" onclick="location.href='{% url 'login' %}'">zalogować</b>.</span>
+  </div>
+  {% endif %}
 
 </div>
 
