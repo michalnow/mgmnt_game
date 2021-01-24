@@ -8,15 +8,6 @@
   text-shadow: 1px 1px 3px #8d0126;
 }
 
-/*Left top colored block*/
-.wy-side-nav-search {
-  text-shadow: 2px 2px 8px #000000;
-  background: transparent url(../img/applogo.png) no-repeat left;
-  background-color: white;
-  height: 150px;
-  width: 150px;
-}
-
 a.icon,
 a.icon-home {
   visibility: hidden;
@@ -66,7 +57,7 @@ a {
   color: #ccc;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  height: 32px;
+  height: 42px;
   position: fixed;
   top: 0;
   left: 0;
@@ -121,7 +112,7 @@ a {
 #adminbar ul {
   float: left;
   top: 0;
-  line-height: 32px;
+  line-height: 42px;
   font-weight: 500;
 }
 
@@ -140,24 +131,6 @@ a {
   background: black;
 }
 
-/*Sidebar*/
-/*Buttons*/
-.wy-menu-vertical {
-  /*Classes to color buttons */
-  /*arrow on lists*/
-}
-
-.wy-menu-vertical li.current > a,
-.wy-menu-vertical li.current > a:hover {
-  border-top: 1px solid #8d0126;
-  background-color: #8d0126;
-  color: white;
-  text-shadow: 1px 1px 2px #000000;
-  border-bottom: 1px solid #8d0126;
-  border-right: black solid 1px;
-  position: relative;
-}
-
 .wy-menu-vertical li.toc-current {
   background: #d8d7d7;
 }
@@ -174,21 +147,6 @@ a {
   border-top: 1px solid #004f48;
   background-color: #004f48;
   border-bottom: 1px solid #004f48;
-}
-
-.wy-menu-vertical li.current > a:after {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background: #f1f1f1;
-  position: absolute;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 27%;
-  left: 142px;
-  border-left: black solid 1px;
-  border-bottom: black solid 1px;
 }
 
 .wy-menu-vertical li :active {
@@ -217,10 +175,6 @@ a {
   /*Content block*/
   margin-left: 150px;
   background-color: #f1f1f1;
-}
-
-.wy-body-for-nav {
-  background-size: 150px 1px;
 }
 
 /*Search app*/
@@ -385,4 +339,35 @@ ol.json-array li {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.unauthenticated-info,
+.game-button {
+    background-color: #484141;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: large;
+    box-shadow: 1px 3px 5px grey;
+  }
+
+.info-link {
+    color: lightslategray;
+    cursor: pointer;
+}
+
+.info-link:hover {
+    color: chocolate;
+}
+
+.game-button:hover {
+    background-color:  #313030;
+}
+
+.app-logo {
+    float: left;
+    max-height: 100%;
+    padding: 2px;
+    border-right: 1px solid #333;
 }

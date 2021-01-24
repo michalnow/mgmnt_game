@@ -17,11 +17,11 @@
 <form id="form_new" class="form-horizontal" method="post" onsubmit="game_request(event, 'form_new', '{% url 'api-init-round' %}')">
     <input type="hidden" name="gameId" value="{{ game_id }}">
     <div class="col-6 float-right" style="margin-left: -38px">
-    <input class="btn btn-warning" type="submit" value="Nowa runda">
+    <input class="btn btn-warning" type="submit" value="Nowa runda" onclick="document.getElementById('myModal').style.display='none'">
     </div>
     </div>
 </form>
-<button id="map" onclick="show_map(event)" disabled class="btn btn-warning">Mapa</button>
+<button id="map" onclick="showModal();show_map(event)" disabled class="btn btn-warning">Mapa</button>
 <script type="text/javascript">
     check_project_amount({{ round_data.k }}, {{ round_data.m }});
 </script>

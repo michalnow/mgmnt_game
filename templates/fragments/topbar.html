@@ -1,4 +1,6 @@
+{% load static %}
 <div id="adminbar">
+    <img src="{% static "img/gamelogo.png" %}" class="app-logo">
     <ul class="button-left">
         <li onclick="location.href='{% url 'home' %}';"><i class="fa fa-home"></i> Informacje</li>
     </ul>
@@ -12,7 +14,7 @@
     {% endif %}
 
     <ul id="logged_as">
-        <li>
+        <li style="font-size: 14px;">
             {% if user.is_authenticated %}
                 <b> {{ user.username }} :</b>
                 {% if user.is_staff %}

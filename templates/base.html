@@ -2,41 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Management Game Login</title>
+    <title>Management Game</title>
 
     {# Include css,js,img resources #}
     {% include "fragments/resources.html" %}
 
     {% block head_custom %}{% endblock %}
 </head>
-<body class="wy-body-for-nav" role="document">
-<div class="wy-grid-for-nav">
+<body role="document">
+    {# Fragment with topbar navigation links #}
+    {% include "fragments/topbar.html" %}
 
-    {# Fragment with sidebar navigation links #}
-    {% include "fragments/sidebar.html" %}
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-        {# Fragment with topbar navigation links #}
-        {% include "fragments/topbar.html" %}
-
-        <div class="wy-nav-content">
-            <div class="rst-content">
-                <div role="main">
-                    <div class="section" style="display: flex; justify-content: center;">
-                        <div class="windows">
-                            {% block content %}
-                            {% endblock %}
-                        </div>
-
+    <div class="wy-nav-content">
+        <div class="rst-content">
+            <div role="main">
+                <div class="section" style="display: flex; justify-content: center;">
+                    <div class="windows">
+                        {% block content %}
+                        {% endblock %}
                     </div>
-                    {% block footer %}
-                    {% endblock %}
+
                 </div>
+                {% block footer %}
+                {% endblock %}
             </div>
         </div>
-    </section>
-</div>
+    </div>
 {% block script %}
 {% endblock %}
 </body>

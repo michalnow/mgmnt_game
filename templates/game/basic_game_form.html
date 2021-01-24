@@ -13,7 +13,7 @@
     {% for itr in round_iterator %}
         <tr>
             <td >
-                <button class="btn-light" onclick="load_project_graph(event, {{ itr }})">Projekt{{ itr }}</button>
+                <button class="btn-light" onclick="showModal();load_project_graph(event, {{ itr }})">Projekt{{ itr }}</button>
             </td>
             <td>
                 {{ round_data.koszty|get_at_index:forloop.counter0 }}
